@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #1d2939;
+}
+
+header {
+    background: #102a56;
+    color: white;
+    padding: 25px 7%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+header h1 span {
+    color: #46b5ff;
+}
+
+header p {
+    margin-top: 8px;
+    color: #d5e4f8;
+}
+
+main {
+    width: 86%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+main > h2 {
+    color: #102a56;
+    margin-bottom: 10px;
+}
+
+main > p {
+    color: #667085;
+    margin-bottom: 25px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card, .panel {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.card {
+    border-left: 5px solid #2188df;
+}
+
+.card h3 {
+    color: #667085;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.card h2 {
+    color: #102a56;
+    font-size: 30px;
+}
+
+.panel {
+    margin-bottom: 25px;
+}
+
+.panel h2 {
+    color: #102a56;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2188df;
+}
+
+button {
+    background: #1676c5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 20px;
+    margin-top: 18px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #105b9b;
+}
+
+#playerResults {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.player-card {
+    background: #f8fbff;
+    border: 1px solid #e4eaf2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.player-card h3 {
+    color: #145c99;
+    margin-bottom: 12px;
+}
+
+.player-card p {
+    margin: 9px 0;
+}
+
+.eligible {
+    color: green;
+    font-weight: bold;
+}
+
+.not-eligible {
+    color: red;
+    font-weight: bold;
+}
+
+.daily-record {
+    background: #f3f8ff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #667085;
+}
+
+@media (max-width: 700px) {
+    main {
+        width: 92%;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    #playerResults {
+        grid-template-columns: 1fr;
+    }
+}
